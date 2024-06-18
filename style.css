@@ -8,119 +8,153 @@ html body {
     height: 100%;
 }
 #main {
+
+    position: relative;
     display: flex;
+    /* flex-direction: column;  Added */
     width: 100%;
     height: 100vh;
-}
-/* ---------------------------left side code _----------- */
-#leftside {
-    width: 75%;
-    height: 100%;
-    
-}
- /* --------------------------left top code ------------*/
-
- #ltop {
-    width: 100%;
-    height: 70%;
-    background-image: url(https://images.unsplash.com/photo-1466781783364-36c955e42a7f?q=80&w=1471&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
     background-size: cover;
     background-position: center;
 }
-                 /* ---------left bottom code  */
-
- #lbottom {
-    
-    
-    padding:  30px 50px;
+#nav {
+    align-items: center; /* Added */
+    /* justify-content: space-between; Added */
+    position: absolute;
+    display: flex;
     width: 100%;
-    height: 30%;
-    background-color: rgb(7, 5, 0);
+    height: 10%;
+    /* background-color: brown; */
+} 
+
+#navleft {
+    /* position: absolute; */
+    width: 30%;
+    height: 100%;
+    /* background-color: blue; */
+    padding : 12px  30px;
+    /* background-color: aqua; */
+    z-index: 999999;
+}
+ #navleft h3 {
     color: rgb(255, 255, 255);
+    margin-top: 2%;
+    /* opacity: .9; */
+
  }
- #lbottomcontact  {
-    font-size: 11px;
-    font-weight: 50;
-    justify-content: space-between;
-    display: flex;
-    height: 100px;
+
+#navright {
+    /* position: absolute; */
+   /* background-color: blue; */
+   display: flex; /*Added*/
+    align-items: center; 
+   justify-content: right;
+    width: 70%;
+    height: 100%;
+    padding: 20px;
+    /* background-color: #01010c; */
+
+
+}
+#navright h3 {
     width: 100%;
-
- }
-
- #lbottomleft {
-    width: 40%;
     height: 100%;
- }
+    color: rgb(255, 255, 255);
 
- #lbottomleft p {
-    margin-top: 2%;
-    font-size: 13px;
- }
+}
+#navright a {
+    text-decoration: none;
+    margin-left: 4%;
+}
+    /* --------------------------------nav code end ----------------- */
 
-                /* -------------bottom right------- */
-
- #lbottomright {
-    width: 50%;
-    height: 100%;
-    
- }
-
- #content {
-    font-size: 14px;
+    #leftside {
+    position: absolute;
     display: flex;
-    justify-content: space-between;
-    margin-top: 2%;
- }
+    flex-direction: column;
+    justify-content: center;
+    padding: 3%;
+    width: 25%;
+    height: 100%;
+    background-color: rgba(158, 158, 158, 0.212);
+    /* opacity: .4; */
+    
+}
 
+#leftside #content {
+    /* border-bottom: 1px solid #fff; */
+    width: 100%;
+    height: 100%;
+   margin-top: 15%; 
+   /* padding-bottom: 2%; */
+}
 
+#leftside #content:nth-child(2) h4 {
+    display: inline-block;
+    color: #fff;
+    font-size: 40px;
+    white-space: nowrap;
+    border-bottom: 1px solid #fff;
+}
+#leftside #content:nth-child(2) p {
+    font-size: 13px;
+    
+}
 
- 
-              /* ___________________Right side code ---------------    */
+#leftside h3 {
+    padding-bottom: 2%;
+    margin-top: 25%;
+    color: white;
+    border-bottom: 1px solid #fff;
+    opacity: .7;
+    
+}
+#leftside p{
+    font-size: 13px;
+    color: black;
+    white-space: nowrap;
+}
+ /* --------------------------right side code start------------------------ */
 
 
 #rightside {
-    width: 25%;
+
+    width: 75%;
     height: 100%;
-}
-
-/* --------------------------Right top code ------------*/
-
-#rtop {
-   position: relative;
+    /* background-color: rgba(248, 14, 14, 0.616); */
     
-    display: flex;
-    flex-direction: column;
+}
+ #rightside #Contract {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+    color: #fff;
+    text-align: right;
+ }
+ #Contract h1 {
+    font-size: 150px;
+    /* line-height: 1; */
+} 
+
+#Contract #input {
     width: 100%;
-    height: 70%;
-    background-color: rgb(250, 249, 247);
-    padding: 15%;
-    
- }
- #rtop a {
- color: black;
-    text-decoration: none;
-    margin-bottom: 15px;
-    text-transform: uppercase;
- }
-#icone{
-   display: flex;
-   flex-direction: column;
-   position: absolute;
-   z-index: 9999;
-      top: 5%;
- right: 10vh;
- gap: 30px;
- margin-top: 1%;
+    padding: 12px 22px;
+    background-color: transparent;
+    border: none;
+
 }
 
-
-                 /* ---------Right bottom code  */
-
-                 #rbottom {
-                    width: 100%;
-                    height: 30%;
-                    background-image: url(https://images.unsplash.com/photo-1477554193778-9562c28588c0?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-                 background-size: cover;
-                 background-position: center;
-                  }
+#Contract #input input {
+    margin-top: 40px;
+    padding-right: 25%;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 247, 247); /* If you want the text color to be white */
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+#Contract #input input::placeholder {
+    color: rgb(255, 246, 246); /* Change placeholder color */
+}
